@@ -20,7 +20,7 @@ Gem::Specification.new do |s|
   s.summary = "Custom preferences for ActiveRecord models"
   s.test_files = ["test/app_root/app/models/car.rb", "test/app_root/app/models/employee.rb", "test/app_root/app/models/manager.rb", "test/app_root/app/models/user.rb", "test/app_root/db/migrate/001_create_users.rb", "test/app_root/db/migrate/002_create_cars.rb", "test/app_root/db/migrate/003_create_employees.rb", "test/app_root/db/migrate/004_migrate_preferences_to_version_1.rb", "test/factory.rb", "test/functional/preferences_test.rb", "test/test_helper.rb", "test/unit/preference_definition_test.rb", "test/unit/preference_test.rb"]
 
-  s.add_dependency "rails", ">= 4.2.0"
+  s.add_dependency "rails", ">= 5.0.0"
 
   s.add_development_dependency(%q<rake>, [">= 0"])
   s.add_development_dependency(%q<plugin_test_helper>, [">= 0.3.1"])
