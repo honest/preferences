@@ -417,8 +417,8 @@ module Preferences
         preferences_changed[name] = old if preference_value_changed?(name, old, value)
       end
 
-      value = convert_number_column_value(value) if preference_definitions[name].number?
-      preferences_group(group)[name] = preference_definitions[name].type_cast(value)
+      value = preference_definitions[name].type_cast_for_database(value)
+      preferences_group(group)[name] = value
 
       value
     end
